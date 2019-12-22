@@ -19,6 +19,6 @@ class SightingsController < ApplicationController
       include: [:bird, :location]
     }
     render json: SightingSerializer.new(sighting, options)
-
+    # I have made changes but the learn gem doesn't recognize them >:(
   end
 end
