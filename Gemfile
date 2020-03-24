@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '2.5.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -44,3 +44,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# https://learn.co/tracks/full-stack-web-development-v8/module-14-front-end-web-programming-in-javascript/section-6-rails-as-an-api/using-the-fast-json-api-gem
+# To include Fast JSON API, add gem 'fast_jsonapi' to your Rails project's Gemfile and run bundle install
+gem 'fast_jsonapi'
