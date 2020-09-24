@@ -1,0 +1,326 @@
+--- !ruby/object:ActiveRecord::ConnectionAdapters::SchemaCache
+columns:
+  birds:
+  - &1 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: id
+    table_name: birds
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: integer
+      type: :integer
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &2 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: name
+    table_name: birds
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: varchar
+      type: :string
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &3 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: species
+    table_name: birds
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: varchar
+      type: :string
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &4 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: created_at
+    table_name: birds
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &5 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: updated_at
+    table_name: birds
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  locations:
+  - &6 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: id
+    table_name: locations
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: integer
+      type: :integer
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &7 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: latitude
+    table_name: locations
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: float
+      type: :float
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &8 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: longitude
+    table_name: locations
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: float
+      type: :float
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &9 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: created_at
+    table_name: locations
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &10 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: updated_at
+    table_name: locations
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  sightings:
+  - &11 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: id
+    table_name: sightings
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: integer
+      type: :integer
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &12 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: bird_id
+    table_name: sightings
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: integer
+      type: :integer
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &13 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: location_id
+    table_name: sightings
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: integer
+      type: :integer
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &14 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: created_at
+    table_name: sightings
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &15 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: updated_at
+    table_name: sightings
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  schema_migrations:
+  - &16 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: version
+    table_name: schema_migrations
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: varchar
+      type: :string
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  ar_internal_metadata:
+  - &17 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: key
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: varchar
+      type: :string
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &18 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: value
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: varchar
+      type: :string
+      limit:
+      precision:
+      scale:
+    'null': true
+    default:
+    default_function:
+    collation:
+    comment:
+  - &19 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: created_at
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+  - &20 !ruby/object:ActiveRecord::ConnectionAdapters::Column
+    name: updated_at
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+      sql_type: datetime
+      type: :datetime
+      limit:
+      precision:
+      scale:
+    'null': false
+    default:
+    default_function:
+    collation:
+    comment:
+columns_hash:
+  birds:
+    id: *1
+    name: *2
+    species: *3
+    created_at: *4
+    updated_at: *5
+  locations:
+    id: *6
+    latitude: *7
+    longitude: *8
+    created_at: *9
+    updated_at: *10
+  sightings:
+    id: *11
+    bird_id: *12
+    location_id: *13
+    created_at: *14
+    updated_at: *15
+  schema_migrations:
+    version: *16
+  ar_internal_metadata:
+    key: *17
+    value: *18
+    created_at: *19
+    updated_at: *20
+primary_keys:
+  birds: id
+  locations: id
+  sightings: id
+  schema_migrations: version
+  ar_internal_metadata: key
+data_sources:
+  birds: true
+  locations: true
+  sightings: true
+  schema_migrations: true
+  ar_internal_metadata: true
+version: 20190514163908
